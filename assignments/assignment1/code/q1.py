@@ -18,7 +18,7 @@ def rotate(img, degree):
     return cv2.rotate(img, rot)
 
 # import image
-img = cv2.imread('img1.png', 0)
+img = cv2.imread('img1.png')
 
 # get rotation angle
 rotangle = int(input("enter rotation angle: "))
@@ -30,3 +30,5 @@ cv2.imshow('image', img)
 cv2.waitKey(3000)
 # close image
 cv2.destroyAllWindows()
+# save image
+cv2.imwrite('rot{}.png'.format(rotangle), img)
