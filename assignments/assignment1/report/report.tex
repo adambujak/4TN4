@@ -133,12 +133,12 @@ Bilinear interpolation can be used to upsample an image by adding more pixels by
 
 To find $P$ using bilinear interpolation, we can find $R_1$ and $R_2$, using linear interpolation, and then linearly interpolate between $R_1$ and $R_2$.
 
-\[R_1 = \frac{Q_{21} - Q_{11}}{x_2-x_1} \cdot (x - x_1)  \]
-\[R_2 = \frac{Q_{22} - Q_{12}}{x_2-x_1} \cdot (x - x_1)  \]
+\[R_1 = \frac{Q_{21} - Q_{11}}{x_2-x_1} \cdot (x - x_1) + Q_{11}\]
+\[R_2 = \frac{Q_{22} - Q_{12}}{x_2-x_1} \cdot (x - x_1) + Q_{12}  \]
 
-\[P = \frac{R_2 - R_1}{y_2-y_1} \cdot (y - y_1)  \]
+\[P = \frac{R_2 - R_1}{y_2-y_1} \cdot (y - y_1) + R_1 \]
 
-\noindent{By plugging in, we find $R_1 = 12.5$, $R_2 = -7.5$, and $P=-13.\overline{3}$.}
+\noindent{By plugging in, we find $R_1 = 22.5$, $R_2 = 92.5$, and $P=69.1\overline{6}$.}
 
 \section{Implementation}
 
