@@ -29,13 +29,18 @@ from sklearn.svm import SVR
 regressor = SVR(kernel='rbf')
 regressor.fit(X,y)
 
+from joblib import dump
+dump(sc_X, 'std_scaler_x.bin', compress=True)
+dump(sc_y, 'std_scaler_y.bin', compress=True)
+dump(regressor, 'regressor.joblib')
+
+
 #5 Predicting a new result
-#y_pred = regressor.predict([[6.5]])
-in_trans = sc_X.transform(np.array([[6.5, 6.5], [3.5, 3.5]]))
-y_pred = regressor.predict(in_trans);
-out_pred = []
-for pred in y_pred:
-    out_pred += [[pred]]
-y_pred = out_pred
-y_pred = sc_y.inverse_transform(y_pred)
-print(y_pred)
+#in_trans = sc_X.transform(np.array([[6.5, 6.5], [3.5, 3.5]]))
+#y_pred = regressor.predict(in_trans);
+#out_pred = []
+#for pred in y_pred:
+#    out_pred += [[pred]]
+#y_pred = out_pred
+#y_pred = sc_y.inverse_transform(y_pred)
+#print(y_pred)

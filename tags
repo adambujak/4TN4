@@ -1,0 +1,545 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+np	assignments/assignment1/code/q1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment1/code/q1.py	/^import cv2$/;"	i
+time	assignments/assignment1/code/q1.py	/^import time$/;"	i
+rotate	assignments/assignment1/code/q1.py	/^def rotate(img, degree):$/;"	f
+img	assignments/assignment1/code/q1.py	/^img = cv2.imread('img1.png')$/;"	v
+rotangle	assignments/assignment1/code/q1.py	/^rotangle = int(input("enter rotation angle: "))$/;"	v
+img	assignments/assignment1/code/q1.py	/^img = rotate(img, rotangle)$/;"	v
+np	assignments/assignment1/code/q3.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment1/code/q3.py	/^import cv2$/;"	i
+time	assignments/assignment1/code/q3.py	/^import time$/;"	i
+detect_face	assignments/assignment1/code/q3.py	/^def detect_face(img):$/;"	f
+img	assignments/assignment1/code/q3.py	/^img = cv2.imread('selfie.png')$/;"	v
+img	assignments/assignment1/code/q3.py	/^img = detect_face(img)$/;"	v
+np	assignments/assignment1/code/q2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment1/code/q2.py	/^import cv2$/;"	i
+time	assignments/assignment1/code/q2.py	/^import time$/;"	i
+gamma_correct	assignments/assignment1/code/q2.py	/^def gamma_correct(img, gamma):$/;"	f
+img	assignments/assignment1/code/q2.py	/^img = cv2.imread('img1.png')$/;"	v
+img	assignments/assignment1/code/q2.py	/^img = gamma_correct(img, 2)$/;"	v
+Theory	assignments/assignment1/report/report.tex	/^\\section{Theory}$/;"	s
+Phone Camera Parameters	assignments/assignment1/report/report.tex	/^\\subsection{Phone Camera Parameters}$/;"	b
+Resolution	assignments/assignment1/report/report.tex	/^\\subsubsection{Resolution}$/;"	b
+Sensor Size	assignments/assignment1/report/report.tex	/^\\subsubsection{Sensor Size}$/;"	b
+Colour Spaces	assignments/assignment1/report/report.tex	/^\\subsection{Colour Spaces}$/;"	b
+XYZ	assignments/assignment1/report/report.tex	/^\\subsubsection{XYZ}$/;"	b
+xyY	assignments/assignment1/report/report.tex	/^\\subsubsection{xyY}$/;"	b
+What is a chromaticity diagram	assignments/assignment1/report/report.tex	/^\\subsubsection{What is a chromaticity diagram?}$/;"	b
+Interpolation	assignments/assignment1/report/report.tex	/^\\subsection{Interpolation}$/;"	b
+Implementation	assignments/assignment1/report/report.tex	/^\\section{Implementation}$/;"	s
+Hello OpenCV	assignments/assignment1/report/report.tex	/^\\subsection{Hello OpenCV}$/;"	b
+Code Screenshot	assignments/assignment1/report/report.tex	/^\\subsubsection{Code Screenshot}$/;"	b
+Results	assignments/assignment1/report/report.tex	/^\\subsubsection{Results}$/;"	b
+Gamma Correction	assignments/assignment1/report/report.tex	/^\\subsection{Gamma Correction}$/;"	b
+Code Screenshot	assignments/assignment1/report/report.tex	/^\\subsubsection{Code Screenshot}$/;"	b
+Results	assignments/assignment1/report/report.tex	/^\\subsubsection{Results}$/;"	b
+Skin Detection	assignments/assignment1/report/report.tex	/^\\subsection{Skin Detection}$/;"	b
+Code Screenshot	assignments/assignment1/report/report.tex	/^\\subsubsection{Code Screenshot}$/;"	b
+Results	assignments/assignment1/report/report.tex	/^\\subsubsection{Results}$/;"	b
+np	assignments/assignment6/code/q1.py	/^import numpy as np$/;"	i
+cv	assignments/assignment6/code/q1.py	/^import cv2 as cv$/;"	i
+cap	assignments/assignment6/code/q1.py	/^cap = cv.VideoCapture("video1.mp4")$/;"	v
+feature_params	assignments/assignment6/code/q1.py	/^feature_params = dict( maxCorners = 40,$/;"	v
+qualityLevel	assignments/assignment6/code/q1.py	/^                       qualityLevel = 0.3,$/;"	v
+minDistance	assignments/assignment6/code/q1.py	/^                       minDistance = 7,$/;"	v
+blockSize	assignments/assignment6/code/q1.py	/^                       blockSize = 7 )$/;"	v
+lk_params	assignments/assignment6/code/q1.py	/^lk_params = dict( winSize  = (15, 15),$/;"	v
+maxLevel	assignments/assignment6/code/q1.py	/^                  maxLevel = 2,$/;"	v
+criteria	assignments/assignment6/code/q1.py	/^                  criteria = (cv.TERM_CRITERIA_EPS | cv.TERM_CRITERIA_COUNT, 10, 0.03))$/;"	v
+color	assignments/assignment6/code/q1.py	/^color = np.random.randint(0, 255, (100, 3))$/;"	v
+old_gray	assignments/assignment6/code/q1.py	/^old_gray = cv.cvtColor(old_frame, cv.COLOR_BGR2GRAY)$/;"	v
+p0	assignments/assignment6/code/q1.py	/^p0 = cv.goodFeaturesToTrack(old_gray, mask = None, **feature_params)$/;"	v
+mask	assignments/assignment6/code/q1.py	/^mask = np.zeros_like(old_frame)$/;"	v
+thickness	assignments/assignment6/code/q1.py	/^thickness = 30$/;"	v
+frame_gray	assignments/assignment6/code/q1.py	/^    frame_gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)$/;"	v
+mask	assignments/assignment6/code/q1.py	/^        mask = cv.line(mask, (int(a), int(b)), (int(c), int(d)), color[i].tolist(), int(thickness))$/;"	v
+thickness	assignments/assignment6/code/q1.py	/^        thickness = max(thickness, 1)$/;"	v
+frame	assignments/assignment6/code/q1.py	/^        frame = cv.circle(frame, (int(a), int(b)), 5, color[i].tolist(), -1)$/;"	v
+img	assignments/assignment6/code/q1.py	/^    img = cv.add(frame, mask)$/;"	v
+k	assignments/assignment6/code/q1.py	/^    k = cv.waitKey(300) & 0xff$/;"	v
+old_gray	assignments/assignment6/code/q1.py	/^    old_gray = frame_gray.copy()$/;"	v
+p0	assignments/assignment6/code/q1.py	/^    p0 = good_new.reshape(-1, 1, 2)$/;"	v
+np	assignments/assignment6/code/t1.py	/^import numpy as np$/;"	i
+data	assignments/assignment6/code/t1.py	/^data = [[0,0,0,0,0,0,0,0,0,0],$/;"	v
+d	assignments/assignment6/code/t1.py	/^d = 10$/;"	v
+theta_vals	assignments/assignment6/code/t1.py	/^theta_vals = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180]$/;"	v
+acc	assignments/assignment6/code/t1.py	/^acc = np.zeros((d, len(theta_vals)))$/;"	v
+current_pixel	assignments/assignment6/code/t1.py	/^        current_pixel = data[i][j]$/;"	v
+theta	assignments/assignment6/code/t1.py	/^                theta = theta_vals[k]$/;"	v
+theta	assignments/assignment6/code/t1.py	/^                theta = theta *3.14\/180$/;"	v
+d	assignments/assignment6/code/t1.py	/^                d = j*np.cos(theta) + i*np.sin(theta)$/;"	v
+tf	assignments/assignment6/code/q2.py	/^import tensorflow as tf$/;"	i
+cv2	assignments/assignment6/code/q2.py	/^import cv2$/;"	i
+np	assignments/assignment6/code/q2.py	/^import numpy as np$/;"	i
+plt	assignments/assignment6/code/q2.py	/^from matplotlib import pyplot as plt$/;"	i
+idx2numpy	assignments/assignment6/code/q2.py	/^import idx2numpy$/;"	i
+random	assignments/assignment6/code/q2.py	/^import random$/;"	i
+pd	assignments/assignment6/code/q2.py	/^import pandas as pd$/;"	i
+svm	assignments/assignment6/code/q2.py	/^from sklearn import svm, metrics$/;"	i
+metrics	assignments/assignment6/code/q2.py	/^from sklearn import svm, metrics$/;"	i
+imgsFilePath	assignments/assignment6/code/q2.py	/^imgsFilePath = "train-images.idx3-ubyte"$/;"	v
+labelsFilePath	assignments/assignment6/code/q2.py	/^labelsFilePath = "train-labels.idx1-ubyte"$/;"	v
+images	assignments/assignment6/code/q2.py	/^images = idx2numpy.convert_from_file(imgsFilePath) labels = idx2numpy.convert_from_file(labelsFilePath)$/;"	v
+cv2	assignments/assignment5/resources/q1.py	/^import cv2$/;"	i
+np	assignments/assignment5/resources/q1.py	/^import numpy as np$/;"	i
+matplotlib	assignments/assignment5/resources/q1.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/resources/q1.py	/^import matplotlib.pyplot as plt$/;"	i
+get_distance	assignments/assignment5/resources/q1.py	/^def get_distance(p1, p2):$/;"	f
+img	assignments/assignment5/resources/q1.py	/^img = cv2.imread('chess.png')$/;"	v
+temp	assignments/assignment5/resources/q1.py	/^temp = np.full((height + 200, width + 200, 3), 255, dtype='uint8')$/;"	v
+img	assignments/assignment5/resources/q1.py	/^img = temp$/;"	v
+img_cpy	assignments/assignment5/resources/q1.py	/^img_cpy = np.copy(img)$/;"	v
+BOTTOM_LEFT	assignments/assignment5/resources/q1.py	/^BOTTOM_LEFT = (66, 358)$/;"	v
+BOTTOM_RIGHT	assignments/assignment5/resources/q1.py	/^BOTTOM_RIGHT = (475, 801)$/;"	v
+TOP_LEFT	assignments/assignment5/resources/q1.py	/^TOP_LEFT = (511, 170)$/;"	v
+TOP_RIGHT	assignments/assignment5/resources/q1.py	/^TOP_RIGHT = (916, 408)$/;"	v
+IMAGE_WIDTH	assignments/assignment5/resources/q1.py	/^IMAGE_WIDTH = int(max(get_distance(BOTTOM_LEFT, BOTTOM_RIGHT), get_distance(TOP_LEFT, TOP_RIGHT)))$/;"	v
+IMAGE_HEIGHT	assignments/assignment5/resources/q1.py	/^IMAGE_HEIGHT = int(max(get_distance(BOTTOM_LEFT, TOP_LEFT), get_distance(BOTTOM_RIGHT, TOP_RIGHT)))$/;"	v
+start_point_arr	assignments/assignment5/resources/q1.py	/^start_point_arr = [TOP_LEFT, BOTTOM_LEFT, BOTTOM_RIGHT, TOP_RIGHT]$/;"	v
+start_points	assignments/assignment5/resources/q1.py	/^start_points = np.float32(start_point_arr)$/;"	v
+end_points	assignments/assignment5/resources/q1.py	/^end_points = np.float32([[0,0], [0, IMAGE_HEIGHT], [IMAGE_WIDTH, IMAGE_HEIGHT], [IMAGE_WIDTH, 0]])$/;"	v
+T	assignments/assignment5/resources/q1.py	/^T = cv2.getPerspectiveTransform(start_points, end_points)$/;"	v
+img	assignments/assignment5/resources/q1.py	/^img = cv2.warpPerspective(img, T, (IMAGE_WIDTH, IMAGE_HEIGHT), flags=cv2.INTER_LINEAR)$/;"	v
+cv2	assignments/assignment5/resources/q3.py	/^import cv2$/;"	i
+matplotlib	assignments/assignment5/resources/q3.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/resources/q3.py	/^import matplotlib.pyplot as plt$/;"	i
+np	assignments/assignment5/resources/q3.py	/^import numpy as np$/;"	i
+find_matches	assignments/assignment5/resources/q3.py	/^def find_matches(img1, img2):$/;"	f
+warp	assignments/assignment5/resources/q3.py	/^def warp(img1, img2):$/;"	f
+img1	assignments/assignment5/resources/q3.py	/^img1 = cv2.imread('image2_1.jpg', 0)$/;"	v
+img2	assignments/assignment5/resources/q3.py	/^img2 = cv2.imread('image2_2.jpg', 0)$/;"	v
+img3	assignments/assignment5/resources/q3.py	/^img3 = cv2.imread('image2_3.jpg', 0)$/;"	v
+img4	assignments/assignment5/resources/q3.py	/^img4 = cv2.imread('image2_4.jpg', 0)$/;"	v
+top	assignments/assignment5/resources/q3.py	/^top = warp(img1, img2)$/;"	v
+bottom	assignments/assignment5/resources/q3.py	/^bottom = warp(img3, img4)$/;"	v
+out	assignments/assignment5/resources/q3.py	/^out = warp(top, bottom)$/;"	v
+cv2	assignments/assignment5/resources/q2.py	/^import cv2$/;"	i
+matplotlib	assignments/assignment5/resources/q2.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/resources/q2.py	/^import matplotlib.pyplot as plt$/;"	i
+img1	assignments/assignment5/resources/q2.py	/^img1 = cv2.imread('image1_1.jpg', 0)$/;"	v
+img2	assignments/assignment5/resources/q2.py	/^img2 = cv2.imread('image1_2.jpg', 0)$/;"	v
+sift	assignments/assignment5/resources/q2.py	/^sift = cv2.SIFT_create()$/;"	v
+bf	assignments/assignment5/resources/q2.py	/^bf = cv2.BFMatcher(cv2.NORM_L1, crossCheck=True)$/;"	v
+matches	assignments/assignment5/resources/q2.py	/^matches = bf.match(descriptors_1,descriptors_2)$/;"	v
+matches	assignments/assignment5/resources/q2.py	/^matches = list(matches)$/;"	v
+temp	assignments/assignment5/resources/q2.py	/^            temp = matches[j]$/;"	v
+matches	assignments/assignment5/resources/q2.py	/^matches = matches[0:30]$/;"	v
+out	assignments/assignment5/resources/q2.py	/^out = cv2.drawMatches(img1, keypoints_1, img2, keypoints_2, matches, img2, flags=2)$/;"	v
+cv2	assignments/assignment5/code/q1.py	/^import cv2$/;"	i
+np	assignments/assignment5/code/q1.py	/^import numpy as np$/;"	i
+matplotlib	assignments/assignment5/code/q1.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/code/q1.py	/^import matplotlib.pyplot as plt$/;"	i
+get_distance	assignments/assignment5/code/q1.py	/^def get_distance(p1, p2):$/;"	f
+img	assignments/assignment5/code/q1.py	/^img = cv2.imread('chess.png')$/;"	v
+temp	assignments/assignment5/code/q1.py	/^temp = np.full((height + 200, width + 200, 3), 255, dtype='uint8')$/;"	v
+img	assignments/assignment5/code/q1.py	/^img = temp$/;"	v
+img_cpy	assignments/assignment5/code/q1.py	/^img_cpy = np.copy(img)$/;"	v
+BOTTOM_LEFT	assignments/assignment5/code/q1.py	/^BOTTOM_LEFT = (66, 358)$/;"	v
+BOTTOM_RIGHT	assignments/assignment5/code/q1.py	/^BOTTOM_RIGHT = (475, 801)$/;"	v
+TOP_LEFT	assignments/assignment5/code/q1.py	/^TOP_LEFT = (511, 170)$/;"	v
+TOP_RIGHT	assignments/assignment5/code/q1.py	/^TOP_RIGHT = (916, 408)$/;"	v
+IMAGE_WIDTH	assignments/assignment5/code/q1.py	/^IMAGE_WIDTH = int(max(get_distance(BOTTOM_LEFT, BOTTOM_RIGHT), get_distance(TOP_LEFT, TOP_RIGHT)))$/;"	v
+IMAGE_HEIGHT	assignments/assignment5/code/q1.py	/^IMAGE_HEIGHT = int(max(get_distance(BOTTOM_LEFT, TOP_LEFT), get_distance(BOTTOM_RIGHT, TOP_RIGHT)))$/;"	v
+start_point_arr	assignments/assignment5/code/q1.py	/^start_point_arr = [TOP_LEFT, BOTTOM_LEFT, BOTTOM_RIGHT, TOP_RIGHT]$/;"	v
+start_points	assignments/assignment5/code/q1.py	/^start_points = np.float32(start_point_arr)$/;"	v
+end_points	assignments/assignment5/code/q1.py	/^end_points = np.float32([[0,0], [0, IMAGE_HEIGHT], [IMAGE_WIDTH, IMAGE_HEIGHT], [IMAGE_WIDTH, 0]])$/;"	v
+T	assignments/assignment5/code/q1.py	/^T = cv2.getPerspectiveTransform(start_points, end_points)$/;"	v
+img	assignments/assignment5/code/q1.py	/^img = cv2.warpPerspective(img, T, (IMAGE_WIDTH, IMAGE_HEIGHT), flags=cv2.INTER_LINEAR)$/;"	v
+Theory	assignments/assignment5/code/report.tex	/^\\section{Theory}$/;"	s
+Harris Corner Detection	assignments/assignment5/code/report.tex	/^\\subsection{Harris Corner Detection}$/;"	b
+Scale selection LoG	assignments/assignment5/code/report.tex	/^\\subsection{Scale selection, LoG}$/;"	b
+RANSAC	assignments/assignment5/code/report.tex	/^\\subsection{RANSAC}$/;"	b
+Implementation	assignments/assignment5/code/report.tex	/^\\section{Implementation}$/;"	s
+Implementation	assignments/assignment5/code/report.tex	/^\\section{Implementation}$/;"	s
+Change point of view	assignments/assignment5/code/report.tex	/^\\subsection{Change point of view}$/;"	b
+Visualize Matched points	assignments/assignment5/code/report.tex	/^\\subsection{Visualize Matched points}$/;"	b
+Solving a puzzle	assignments/assignment5/code/report.tex	/^\\subsection{Solving a puzzle}$/;"	b
+cv2	assignments/assignment5/code/q3.py	/^import cv2$/;"	i
+matplotlib	assignments/assignment5/code/q3.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/code/q3.py	/^import matplotlib.pyplot as plt$/;"	i
+np	assignments/assignment5/code/q3.py	/^import numpy as np$/;"	i
+find_matches	assignments/assignment5/code/q3.py	/^def find_matches(img1, img2):$/;"	f
+warp	assignments/assignment5/code/q3.py	/^def warp(img1, img2):$/;"	f
+img1	assignments/assignment5/code/q3.py	/^img1 = cv2.imread('image2_1.jpg', 0)$/;"	v
+img2	assignments/assignment5/code/q3.py	/^img2 = cv2.imread('image2_2.jpg', 0)$/;"	v
+img3	assignments/assignment5/code/q3.py	/^img3 = cv2.imread('image2_3.jpg', 0)$/;"	v
+img4	assignments/assignment5/code/q3.py	/^img4 = cv2.imread('image2_4.jpg', 0)$/;"	v
+top	assignments/assignment5/code/q3.py	/^top = warp(img1, img2)$/;"	v
+bottom	assignments/assignment5/code/q3.py	/^bottom = warp(img3, img4)$/;"	v
+out	assignments/assignment5/code/q3.py	/^out = warp(top, bottom)$/;"	v
+cv2	assignments/assignment5/code/q2.py	/^import cv2$/;"	i
+matplotlib	assignments/assignment5/code/q2.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment5/code/q2.py	/^import matplotlib.pyplot as plt$/;"	i
+img1	assignments/assignment5/code/q2.py	/^img1 = cv2.imread('image1_1.jpg', 0)$/;"	v
+img2	assignments/assignment5/code/q2.py	/^img2 = cv2.imread('image1_2.jpg', 0)$/;"	v
+sift	assignments/assignment5/code/q2.py	/^sift = cv2.SIFT_create()$/;"	v
+bf	assignments/assignment5/code/q2.py	/^bf = cv2.BFMatcher(cv2.NORM_L1, crossCheck=True)$/;"	v
+matches	assignments/assignment5/code/q2.py	/^matches = bf.match(descriptors_1,descriptors_2)$/;"	v
+matches	assignments/assignment5/code/q2.py	/^matches = list(matches)$/;"	v
+temp	assignments/assignment5/code/q2.py	/^            temp = matches[j]$/;"	v
+matches	assignments/assignment5/code/q2.py	/^matches = matches[0:30]$/;"	v
+out	assignments/assignment5/code/q2.py	/^out = cv2.drawMatches(img1, keypoints_1, img2, keypoints_2, matches, img2, flags=2)$/;"	v
+np	assignments/assignment2/code/q1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q1.py	/^import cv2$/;"	i
+time	assignments/assignment2/code/q1.py	/^import time$/;"	i
+statistics	assignments/assignment2/code/q1.py	/^import statistics$/;"	i
+open_video	assignments/assignment2/code/q1.py	/^def open_video():$/;"	f
+get_background_img	assignments/assignment2/code/q1.py	/^def get_background_img(vid):$/;"	f
+subtract_background	assignments/assignment2/code/q1.py	/^def subtract_background():$/;"	f
+vid	assignments/assignment2/code/q1.py	/^vid = open_video()$/;"	v
+np	assignments/assignment2/code/q4.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q4.py	/^import cv2$/;"	i
+plt	assignments/assignment2/code/q4.py	/^from matplotlib import pyplot as plt$/;"	i
+plot_histogram	assignments/assignment2/code/q4.py	/^def plot_histogram(bins, values, channel_name, color):$/;"	f
+get_rgb_histograms	assignments/assignment2/code/q4.py	/^def get_rgb_histograms(img):$/;"	f
+apply_histogram_equalization_rgb	assignments/assignment2/code/q4.py	/^def apply_histogram_equalization_rgb(img, clahe: bool):$/;"	f
+USE_CLAHE	assignments/assignment2/code/q4.py	/^USE_CLAHE = True$/;"	v
+img	assignments/assignment2/code/q4.py	/^img = cv2.imread('img4.png')$/;"	v
+img	assignments/assignment2/code/q4.py	/^img = apply_histogram_equalization_rgb(img, USE_CLAHE)$/;"	v
+img_name	assignments/assignment2/code/q4.py	/^img_name = "img4_rgb_he"$/;"	v
+np	assignments/assignment2/code/q2b.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q2b.py	/^import cv2$/;"	i
+time	assignments/assignment2/code/q2b.py	/^import time$/;"	i
+apply_mask_in_frequency_domain	assignments/assignment2/code/q2b.py	/^def apply_mask_in_frequency_domain(img, mask):$/;"	f
+messi	assignments/assignment2/code/q2b.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+ronaldo	assignments/assignment2/code/q2b.py	/^ronaldo = cv2.imread('ronaldo.jpg', 0)$/;"	v
+image	assignments/assignment2/code/q2b.py	/^image = np.zeros((len(messi), len(messi[0])), np.uint8)$/;"	v
+center	assignments/assignment2/code/q2b.py	/^center = (int(len(messi[0])\/2), int(len(messi)\/2))$/;"	v
+circle	assignments/assignment2/code/q2b.py	/^circle = cv2.circle(image, center, 30, 1, -1)$/;"	v
+messi_new	assignments/assignment2/code/q2b.py	/^messi_new = np.multiply(apply_mask_in_frequency_domain(messi, circle), 0.5)$/;"	v
+inv_circle	assignments/assignment2/code/q2b.py	/^inv_circle = np.divide(cv2.bitwise_not(circle), 255)$/;"	v
+ronaldo_new	assignments/assignment2/code/q2b.py	/^ronaldo_new = np.multiply(apply_mask_in_frequency_domain(ronaldo, inv_circle), 0.5)$/;"	v
+np	assignments/assignment2/code/q4-lab.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q4-lab.py	/^import cv2$/;"	i
+plt	assignments/assignment2/code/q4-lab.py	/^from matplotlib import pyplot as plt$/;"	i
+plot_histogram	assignments/assignment2/code/q4-lab.py	/^def plot_histogram(bins, values, channel_name, color):$/;"	f
+get_lab_histogram	assignments/assignment2/code/q4-lab.py	/^def get_lab_histogram(img):$/;"	f
+apply_histogram_equalization_lab	assignments/assignment2/code/q4-lab.py	/^def apply_histogram_equalization_lab(img, clahe: bool):$/;"	f
+USE_CLAHE	assignments/assignment2/code/q4-lab.py	/^USE_CLAHE = True$/;"	v
+img	assignments/assignment2/code/q4-lab.py	/^img = cv2.imread('img4.png')$/;"	v
+img	assignments/assignment2/code/q4-lab.py	/^img = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)$/;"	v
+img	assignments/assignment2/code/q4-lab.py	/^img = apply_histogram_equalization_lab(img, USE_CLAHE)$/;"	v
+img	assignments/assignment2/code/q4-lab.py	/^img = cv2.cvtColor(img, cv2.COLOR_LAB2BGR)$/;"	v
+img_name	assignments/assignment2/code/q4-lab.py	/^img_name = "img4_lab_he"$/;"	v
+np	assignments/assignment2/code/q2a.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q2a.py	/^import cv2$/;"	i
+time	assignments/assignment2/code/q2a.py	/^import time$/;"	i
+messi	assignments/assignment2/code/q2a.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+ronaldo	assignments/assignment2/code/q2a.py	/^ronaldo = cv2.imread('ronaldo.jpg', 0)$/;"	v
+messi_fft	assignments/assignment2/code/q2a.py	/^messi_fft = np.fft.fft2(messi)$/;"	v
+ronaldo_fft	assignments/assignment2/code/q2a.py	/^ronaldo_fft = np.fft.fft2(ronaldo)$/;"	v
+magnitude_messi	assignments/assignment2/code/q2a.py	/^magnitude_messi = np.abs(messi_fft)$/;"	v
+phase_messi	assignments/assignment2/code/q2a.py	/^phase_messi = np.angle(messi_fft)$/;"	v
+magnitude_ronaldo	assignments/assignment2/code/q2a.py	/^magnitude_ronaldo = np.abs(ronaldo_fft)$/;"	v
+phase_ronaldo	assignments/assignment2/code/q2a.py	/^phase_ronaldo = np.angle(ronaldo_fft)$/;"	v
+messi_ronaldo	assignments/assignment2/code/q2a.py	/^messi_ronaldo = np.multiply(magnitude_messi, np.exp(1j*phase_ronaldo))$/;"	v
+ronaldo_messi	assignments/assignment2/code/q2a.py	/^ronaldo_messi = np.multiply(magnitude_ronaldo, np.exp(1j*phase_messi))$/;"	v
+messi_mag	assignments/assignment2/code/q2a.py	/^messi_mag = np.fft.ifft2(messi_ronaldo)$/;"	v
+ronaldo_mag	assignments/assignment2/code/q2a.py	/^ronaldo_mag = np.fft.ifft2(ronaldo_messi)$/;"	v
+messi_mag	assignments/assignment2/code/q2a.py	/^messi_mag = np.abs(messi_mag)$/;"	v
+ronaldo_mag	assignments/assignment2/code/q2a.py	/^ronaldo_mag = np.abs(ronaldo_mag)$/;"	v
+np	assignments/assignment2/code/q3.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q3.py	/^import cv2$/;"	i
+time	assignments/assignment2/code/q3.py	/^import time$/;"	i
+img	assignments/assignment2/code/q3.py	/^img = cv2.imread('img3.png')$/;"	v
+median	assignments/assignment2/code/q3.py	/^median = cv2.medianBlur(img,5)$/;"	v
+gauss	assignments/assignment2/code/q3.py	/^gauss = cv2.GaussianBlur(img,(5,5),0)$/;"	v
+copy	assignments/assignment2/code/median_filter.py	/^import copy$/;"	i
+myimage	assignments/assignment2/code/median_filter.py	/^myimage = [[3,5,8,4],$/;"	v
+mykernel	assignments/assignment2/code/median_filter.py	/^mykernel = [[0,1,0],$/;"	v
+statistics	assignments/assignment2/code/median_filter.py	/^import statistics$/;"	i
+get_median_pixel	assignments/assignment2/code/median_filter.py	/^def get_median_pixel(image, kernel, x, y):$/;"	f
+median_filter	assignments/assignment2/code/median_filter.py	/^def median_filter(image, kernel):$/;"	f
+np	assignments/assignment2/code/q2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment2/code/q2.py	/^import cv2$/;"	i
+time	assignments/assignment2/code/q2.py	/^import time$/;"	i
+apply_mask_in_frequency_domain	assignments/assignment2/code/q2.py	/^def apply_mask_in_frequency_domain(img, mask):$/;"	f
+messi	assignments/assignment2/code/q2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+ronaldo	assignments/assignment2/code/q2.py	/^ronaldo = cv2.imread('ronaldo.jpg', 0)$/;"	v
+image	assignments/assignment2/code/q2.py	/^image = np.zeros((len(messi), len(messi[0])), np.uint8)$/;"	v
+center	assignments/assignment2/code/q2.py	/^center = (int(len(messi[0])\/2), int(len(messi)\/2))$/;"	v
+circle	assignments/assignment2/code/q2.py	/^circle = cv2.circle(image, center, 20, 1, -1)$/;"	v
+messi_new	assignments/assignment2/code/q2.py	/^messi_new = np.multiply(apply_mask_in_frequency_domain(messi, circle), 0.5)$/;"	v
+circle	assignments/assignment2/code/q2.py	/^circle = cv2.circle(image, center, 50, 1, -1)$/;"	v
+inv_circle	assignments/assignment2/code/q2.py	/^inv_circle = np.divide(cv2.bitwise_not(circle), 255)$/;"	v
+ronaldo_new	assignments/assignment2/code/q2.py	/^ronaldo_new = np.multiply(apply_mask_in_frequency_domain(ronaldo, inv_circle), 0.5)$/;"	v
+Theory	assignments/assignment2/report.tex	/^\\section{Theory}$/;"	s
+Histogram Equalization	assignments/assignment2/report.tex	/^\\subsection{Histogram Equalization}$/;"	b
+Transfer Function	assignments/assignment2/report.tex	/^\\subsection{Transfer Function}$/;"	b
+Filtering in Spatial Domain	assignments/assignment2/report.tex	/^\\subsection{Filtering in Spatial Domain}$/;"	b
+a Kernel 1	assignments/assignment2/report.tex	/^\\subsubsection{a) Kernel 1}$/;"	b
+b Kernel 2	assignments/assignment2/report.tex	/^\\subsubsection{b) Kernel 2}$/;"	b
+Fourier Domain	assignments/assignment2/report.tex	/^\\subsection{Fourier Domain}$/;"	b
+signal	assignments/assignment3/code/q2_2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/code/q2_2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/code/q2_2.py	/^import cv2$/;"	i
+messi	assignments/assignment3/code/q2_2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/code/q2_2.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/code/q2_2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+circle	assignments/assignment3/code/q2_2.py	/^circle = cv2.Canny(circle, 20, 120)$/;"	v
+img	assignments/assignment3/code/q2_2.py	/^img = messi.copy()$/;"	v
+res	assignments/assignment3/code/q2_2.py	/^res = cv2.matchTemplate(img,circle,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/code/q2_2.py	/^top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/code/q2_2.py	/^bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+np	assignments/assignment3/code/q1_1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/code/q1_1.py	/^import cv2$/;"	i
+plt	assignments/assignment3/code/q1_1.py	/^from matplotlib import pyplot as plt$/;"	i
+img	assignments/assignment3/code/q1_1.py	/^img = cv2.imread('lp.jpg', 0)$/;"	v
+blurred_small	assignments/assignment3/code/q1_1.py	/^blurred_small = cv2.GaussianBlur(img, (3, 3), 0)$/;"	v
+blurred_big	assignments/assignment3/code/q1_1.py	/^blurred_big = cv2.GaussianBlur(img, (7, 7), 0)$/;"	v
+output	assignments/assignment3/code/q1_1.py	/^output = (cv2.subtract(blurred_small, blurred_big))$/;"	v
+output	assignments/assignment3/code/q1_1.py	/^output = cv2.Canny(img, 20, 120)$/;"	v
+signal	assignments/assignment3/code/q2_3.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/code/q2_3.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/code/q2_3.py	/^import cv2$/;"	i
+scale	assignments/assignment3/code/q2_3.py	/^def scale(img, scale_factor):$/;"	f
+messi	assignments/assignment3/code/q2_3.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/code/q2_3.py	/^messi = scale(messi, 2);$/;"	v
+messi_copy	assignments/assignment3/code/q2_3.py	/^messi_copy = messi.copy()$/;"	v
+messi	assignments/assignment3/code/q2_3.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/code/q2_3.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+scale_factor	assignments/assignment3/code/q2_3.py	/^    scale_factor = 0.7+0.1*i$/;"	v
+template	assignments/assignment3/code/q2_3.py	/^    template = scale(circle, scale_factor)$/;"	v
+template	assignments/assignment3/code/q2_3.py	/^    template = cv2.Canny(template, 20, 120)$/;"	v
+img	assignments/assignment3/code/q2_3.py	/^    img = messi.copy()$/;"	v
+res	assignments/assignment3/code/q2_3.py	/^    res = cv2.matchTemplate(img,template,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/code/q2_3.py	/^    top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/code/q2_3.py	/^    bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+Theory	assignments/assignment3/code/main.tex	/^\\section{Theory}$/;"	s
+Edge Detection Sobel Operator	assignments/assignment3/code/main.tex	/^\\subsection{Edge Detection, Sobel Operator}$/;"	b
+Edge Detection Canny Operator	assignments/assignment3/code/main.tex	/^\\subsection{Edge Detection, Canny Operator}$/;"	b
+Convolution Theorem	assignments/assignment3/code/main.tex	/^\\subsection{Convolution Theorem}$/;"	b
+argparse	assignments/assignment3/code/canny.py	/^import argparse$/;"	i
+matplotlib	assignments/assignment3/code/canny.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	assignments/assignment3/code/canny.py	/^import matplotlib.pyplot as plt$/;"	i
+np	assignments/assignment3/code/canny.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/code/canny.py	/^import cv2$/;"	i
+convolution	assignments/assignment3/code/canny.py	/^def convolution(image, kernel, average=False, verbose=False):$/;"	f
+dnorm	assignments/assignment3/code/canny.py	/^def dnorm(x, mu, sd):$/;"	f
+gaussian_kernel	assignments/assignment3/code/canny.py	/^def gaussian_kernel(size, sigma=1, verbose=False):$/;"	f
+gaussian_blur	assignments/assignment3/code/canny.py	/^def gaussian_blur(image, kernel_size, verbose=False):$/;"	f
+sobel_edge_detection	assignments/assignment3/code/canny.py	/^def sobel_edge_detection(image, filter, convert_to_degree=False, verbose=False):$/;"	f
+non_max_suppression	assignments/assignment3/code/canny.py	/^def non_max_suppression(gradient_magnitude, gradient_direction, verbose):$/;"	f
+threshold	assignments/assignment3/code/canny.py	/^def threshold(image, low, high, weak, verbose=False):$/;"	f
+hysteresis	assignments/assignment3/code/canny.py	/^def hysteresis(image, weak):$/;"	f
+image	assignments/assignment3/code/canny.py	/^    image = np.array([[0,0,0,0,0,0,0,0],$/;"	v
+blurred_image	assignments/assignment3/code/canny.py	/^    blurred_image = image$/;"	v
+verbose	assignments/assignment3/code/canny.py	/^    verbose = False$/;"	v
+edge_filter	assignments/assignment3/code/canny.py	/^    edge_filter = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])$/;"	v
+numpy	assignments/assignment3/code/canny.py	/^    import numpy$/;"	i
+new_image	assignments/assignment3/code/canny.py	/^    new_image = non_max_suppression(gradient_magnitude, gradient_direction, verbose=verbose)$/;"	v
+weak	assignments/assignment3/code/canny.py	/^    weak = 50$/;"	v
+new_image	assignments/assignment3/code/canny.py	/^    new_image = threshold(new_image, 20, 120, weak=weak, verbose=False)$/;"	v
+new_image	assignments/assignment3/code/canny.py	/^    new_image = hysteresis(new_image, weak)$/;"	v
+signal	assignments/assignment3/code/q2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/code/q2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/code/q2.py	/^import cv2$/;"	i
+my_search	assignments/assignment3/code/q2.py	/^def my_search(image, template):$/;"	f
+messi	assignments/assignment3/code/q2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+circle	assignments/assignment3/code/q2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+messi	assignments/assignment3/code/q2.py	/^messi = my_search(messi, circle)$/;"	v
+signal	assignments/assignment3/submission/q2_2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/q2_2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/q2_2.py	/^import cv2$/;"	i
+messi	assignments/assignment3/submission/q2_2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/submission/q2_2.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/submission/q2_2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+circle	assignments/assignment3/submission/q2_2.py	/^circle = cv2.Canny(circle, 20, 120)$/;"	v
+img	assignments/assignment3/submission/q2_2.py	/^img = messi.copy()$/;"	v
+res	assignments/assignment3/submission/q2_2.py	/^res = cv2.matchTemplate(img,circle,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/submission/q2_2.py	/^top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/submission/q2_2.py	/^bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+np	assignments/assignment3/submission/q1_1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/q1_1.py	/^import cv2$/;"	i
+plt	assignments/assignment3/submission/q1_1.py	/^from matplotlib import pyplot as plt$/;"	i
+img	assignments/assignment3/submission/q1_1.py	/^img = cv2.imread('lp.jpg', 0)$/;"	v
+blurred_small	assignments/assignment3/submission/q1_1.py	/^blurred_small = cv2.GaussianBlur(img, (3, 3), 0)$/;"	v
+blurred_big	assignments/assignment3/submission/q1_1.py	/^blurred_big = cv2.GaussianBlur(img, (7, 7), 0)$/;"	v
+output	assignments/assignment3/submission/q1_1.py	/^output = (cv2.subtract(blurred_small, blurred_big))$/;"	v
+output	assignments/assignment3/submission/q1_1.py	/^output = cv2.Canny(img, 20, 120)$/;"	v
+signal	assignments/assignment3/submission/q2_3.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/q2_3.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/q2_3.py	/^import cv2$/;"	i
+scale	assignments/assignment3/submission/q2_3.py	/^def scale(img, scale_factor):$/;"	f
+messi	assignments/assignment3/submission/q2_3.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/submission/q2_3.py	/^messi = scale(messi, 2);$/;"	v
+messi_copy	assignments/assignment3/submission/q2_3.py	/^messi_copy = messi.copy()$/;"	v
+messi	assignments/assignment3/submission/q2_3.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/submission/q2_3.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+scale_factor	assignments/assignment3/submission/q2_3.py	/^    scale_factor = 0.7+0.1*i$/;"	v
+template	assignments/assignment3/submission/q2_3.py	/^    template = scale(circle, scale_factor)$/;"	v
+template	assignments/assignment3/submission/q2_3.py	/^    template = cv2.Canny(template, 20, 120)$/;"	v
+img	assignments/assignment3/submission/q2_3.py	/^    img = messi.copy()$/;"	v
+res	assignments/assignment3/submission/q2_3.py	/^    res = cv2.matchTemplate(img,template,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/submission/q2_3.py	/^    top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/submission/q2_3.py	/^    bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+signal	assignments/assignment3/submission/q2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/q2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/q2.py	/^import cv2$/;"	i
+my_search	assignments/assignment3/submission/q2.py	/^def my_search(image, template):$/;"	f
+messi	assignments/assignment3/submission/q2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+circle	assignments/assignment3/submission/q2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+messi	assignments/assignment3/submission/q2.py	/^messi = my_search(messi, circle)$/;"	v
+signal	assignments/assignment3/submission/submission/q2_2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/submission/q2_2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/submission/q2_2.py	/^import cv2$/;"	i
+messi	assignments/assignment3/submission/submission/q2_2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/submission/submission/q2_2.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/submission/submission/q2_2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+circle	assignments/assignment3/submission/submission/q2_2.py	/^circle = cv2.Canny(circle, 20, 120)$/;"	v
+img	assignments/assignment3/submission/submission/q2_2.py	/^img = messi.copy()$/;"	v
+res	assignments/assignment3/submission/submission/q2_2.py	/^res = cv2.matchTemplate(img,circle,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/submission/submission/q2_2.py	/^top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/submission/submission/q2_2.py	/^bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+np	assignments/assignment3/submission/submission/q1_1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/submission/q1_1.py	/^import cv2$/;"	i
+plt	assignments/assignment3/submission/submission/q1_1.py	/^from matplotlib import pyplot as plt$/;"	i
+img	assignments/assignment3/submission/submission/q1_1.py	/^img = cv2.imread('lp.jpg', 0)$/;"	v
+blurred_small	assignments/assignment3/submission/submission/q1_1.py	/^blurred_small = cv2.GaussianBlur(img, (3, 3), 0)$/;"	v
+blurred_big	assignments/assignment3/submission/submission/q1_1.py	/^blurred_big = cv2.GaussianBlur(img, (7, 7), 0)$/;"	v
+output	assignments/assignment3/submission/submission/q1_1.py	/^output = (cv2.subtract(blurred_small, blurred_big))$/;"	v
+output	assignments/assignment3/submission/submission/q1_1.py	/^output = cv2.Canny(img, 20, 120)$/;"	v
+signal	assignments/assignment3/submission/submission/q2_3.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/submission/q2_3.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/submission/q2_3.py	/^import cv2$/;"	i
+scale	assignments/assignment3/submission/submission/q2_3.py	/^def scale(img, scale_factor):$/;"	f
+messi	assignments/assignment3/submission/submission/q2_3.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+messi	assignments/assignment3/submission/submission/q2_3.py	/^messi = scale(messi, 2);$/;"	v
+messi_copy	assignments/assignment3/submission/submission/q2_3.py	/^messi_copy = messi.copy()$/;"	v
+messi	assignments/assignment3/submission/submission/q2_3.py	/^messi = cv2.Canny(messi, 20, 120)$/;"	v
+circle	assignments/assignment3/submission/submission/q2_3.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+scale_factor	assignments/assignment3/submission/submission/q2_3.py	/^    scale_factor = 0.7+0.1*i$/;"	v
+template	assignments/assignment3/submission/submission/q2_3.py	/^    template = scale(circle, scale_factor)$/;"	v
+template	assignments/assignment3/submission/submission/q2_3.py	/^    template = cv2.Canny(template, 20, 120)$/;"	v
+img	assignments/assignment3/submission/submission/q2_3.py	/^    img = messi.copy()$/;"	v
+res	assignments/assignment3/submission/submission/q2_3.py	/^    res = cv2.matchTemplate(img,template,cv2.TM_CCOEFF_NORMED)$/;"	v
+top_left	assignments/assignment3/submission/submission/q2_3.py	/^    top_left = max_loc[0], max_loc[1]$/;"	v
+bottom_right	assignments/assignment3/submission/submission/q2_3.py	/^    bottom_right = (top_left[0] + w, top_left[1] + h)$/;"	v
+signal	assignments/assignment3/submission/submission/q2.py	/^from scipy import signal$/;"	i
+np	assignments/assignment3/submission/submission/q2.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment3/submission/submission/q2.py	/^import cv2$/;"	i
+my_search	assignments/assignment3/submission/submission/q2.py	/^def my_search(image, template):$/;"	f
+messi	assignments/assignment3/submission/submission/q2.py	/^messi = cv2.imread('messi.jpg', 0)$/;"	v
+circle	assignments/assignment3/submission/submission/q2.py	/^circle = cv2.imread('circle.bmp', 0)$/;"	v
+messi	assignments/assignment3/submission/submission/q2.py	/^messi = my_search(messi, circle)$/;"	v
+np	assignments/assignment4/resources/q1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment4/resources/q1.py	/^import cv2$/;"	i
+s	assignments/assignment4/resources/q1.py	/^s=np.array([[0,0,0],[0,1,0],[1,1,1]])$/;"	v
+erode	assignments/assignment4/resources/q1.py	/^def erode(image, size):$/;"	f
+dilate	assignments/assignment4/resources/q1.py	/^def dilate(image, size):$/;"	f
+image	assignments/assignment4/resources/q1.py	/^image = cv2.imread('3.png', 0)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = cv2.GaussianBlur(image, (51,51),cv2.BORDER_DEFAULT)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = cv2.adaptiveThreshold(working_image,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,11,2)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = erode(working_image, 2)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = dilate(working_image, 15)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = erode(working_image, 35)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = dilate(working_image, 70)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = erode(working_image, 40)$/;"	v
+working_image	assignments/assignment4/resources/q1.py	/^working_image = cv2.bitwise_and(working_image, image)$/;"	v
+np	assignments/assignment4/code/q1.py	/^import numpy as np$/;"	i
+cv2	assignments/assignment4/code/q1.py	/^import cv2$/;"	i
+s	assignments/assignment4/code/q1.py	/^s=np.array([[0,0,0],[0,1,0],[1,1,1]])$/;"	v
+erode	assignments/assignment4/code/q1.py	/^def erode(image, size):$/;"	f
+dilate	assignments/assignment4/code/q1.py	/^def dilate(image, size):$/;"	f
+image	assignments/assignment4/code/q1.py	/^image = cv2.imread('3.png', 0)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = cv2.GaussianBlur(image, (51,51),cv2.BORDER_DEFAULT)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = cv2.adaptiveThreshold(working_image,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,11,2)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = erode(working_image, 2)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = dilate(working_image, 15)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = erode(working_image, 35)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = dilate(working_image, 70)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = erode(working_image, 40)$/;"	v
+working_image	assignments/assignment4/code/q1.py	/^working_image = cv2.bitwise_and(working_image, image)$/;"	v
+np	assignments/assignment4/code/morph.py	/^import numpy as np$/;"	i
+a2l	assignments/assignment4/code/morph.py	/^import array_to_latex as a2l$/;"	i
+image	assignments/assignment4/code/morph.py	/^image = np.array([$/;"	v
+s1	assignments/assignment4/code/morph.py	/^s1 = np.array([$/;"	v
+s2	assignments/assignment4/code/morph.py	/^s2 = np.array([$/;"	v
+s3	assignments/assignment4/code/morph.py	/^s3 = np.array([$/;"	v
+dilate	assignments/assignment4/code/morph.py	/^def dilate(image, s):$/;"	f
+erode	assignments/assignment4/code/morph.py	/^def erode(image, s):$/;"	f
+output	assignments/assignment4/code/morph.py	/^output = erode(image, s3)$/;"	v
+output	assignments/assignment4/code/morph.py	/^output = dilate(output, s3)$/;"	v
+Theory	assignments/assignment4/code/report.tex	/^\\section{Theory}$/;"	s
+Morphology Operations	assignments/assignment4/code/report.tex	/^\\subsection{Morphology Operations}$/;"	b
+Erosion	assignments/assignment4/code/report.tex	/^\\subsubsection{Erosion}$/;"	b
+Dilation	assignments/assignment4/code/report.tex	/^\\subsubsection{Dilation}$/;"	b
+Opening	assignments/assignment4/code/report.tex	/^\\subsubsection{Opening}$/;"	b
+Distance and Boundary	assignments/assignment4/code/report.tex	/^\\subsection{Distance and Boundary}$/;"	b
+Boundary	assignments/assignment4/code/report.tex	/^\\subsubsection{Boundary}$/;"	b
+Distance	assignments/assignment4/code/report.tex	/^\\subsubsection{Distance}$/;"	b
+$D_8$ distance of 4 neighbors	assignments/assignment4/code/report.tex	/^\\subsubsection{$D_8$ distance of 4-neighbors}$/;"	b
+$D_m$ distance of 4 neighbors	assignments/assignment4/code/report.tex	/^\\subsubsection{$D_m$ distance of 4-neighbors}$/;"	b
+$D_m$ distance of 4 neighbors	assignments/assignment4/code/report.tex	/^\\subsubsection{$D_m$ distance of 4-neighbors}$/;"	b
+$D_4$ distance of 8 neighbors	assignments/assignment4/code/report.tex	/^\\subsubsection{$D_4$ distance of 8-neighbors}$/;"	b
+$D_m$ distance of 8 neighbors	assignments/assignment4/code/report.tex	/^\\subsubsection{$D_m$ distance of 8-neighbors}$/;"	b
+Extracting License Plate	assignments/assignment4/code/report.tex	/^\\subsection{Extracting License Plate}$/;"	b
+Implementation	assignments/assignment4/code/report.tex	/^\\section{Implementation}$/;"	s
+np	project/ml_practice/diag.py	/^import numpy as np$/;"	i
+matplotlib	project/ml_practice/diag.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	project/ml_practice/diag.py	/^import matplotlib.pyplot as plt$/;"	i
+pd	project/ml_practice/diag.py	/^import pandas as pd$/;"	i
+make_image	project/ml_practice/diag.py	/^def make_image(lines):$/;"	f
+import_data	project/ml_practice/diag.py	/^def import_data(file):$/;"	f
+append_dataset	project/ml_practice/diag.py	/^def append_dataset(file, X, y):$/;"	f
+X	project/ml_practice/diag.py	/^X = []$/;"	v
+y	project/ml_practice/diag.py	/^y = []$/;"	v
+X	project/ml_practice/diag.py	/^X = np.array(X)$/;"	v
+y	project/ml_practice/diag.py	/^y = np.array(y)$/;"	v
+SVR	project/ml_practice/diag.py	/^from sklearn.svm import SVR$/;"	i
+regressor	project/ml_practice/diag.py	/^regressor = SVR(kernel='rbf')$/;"	v
+in_image	project/ml_practice/diag.py	/^in_image = np.array([in_image])$/;"	v
+y_pred	project/ml_practice/diag.py	/^y_pred = regressor.predict(in_image);$/;"	v
+np	project/add_noise.py	/^import numpy as np$/;"	i
+cv2	project/add_noise.py	/^import cv2$/;"	i
+iaa	project/add_noise.py	/^from imgaug import augmenters as iaa$/;"	i
+add_noise	project/add_noise.py	/^def add_noise(image_name, image_extension):$/;"	f
+np	project/project.py	/^import numpy as np$/;"	i
+cv	project/project.py	/^import cv2 as cv$/;"	i
+csv	project/project.py	/^import csv$/;"	i
+listdir	project/project.py	/^from os import listdir$/;"	i
+isfile	project/project.py	/^from os.path import isfile, join$/;"	i
+join	project/project.py	/^from os.path import isfile, join$/;"	i
+get_images	project/project.py	/^def get_images(directory):$/;"	f
+get_image_edges	project/project.py	/^def get_image_edges(image):$/;"	f
+extract_training_point	project/project.py	/^def extract_training_point(noisy_image, gt_image, edge_image, x, y):$/;"	f
+extract_training_data	project/project.py	/^def extract_training_data(noisy_image, gt_image, edge_image):$/;"	f
+get_image_data	project/project.py	/^def get_image_data(directory):$/;"	f
+get_training_data_directory_list	project/project.py	/^def get_training_data_directory_list():$/;"	f
+get_training_data	project/project.py	/^def get_training_data():$/;"	f
+myarray	project/project.py	/^myarray = np.array([[1,3,4], [1,5,6], [9,8,7]])$/;"	v
+load	project/ml_practice/svr2.py	/^from joblib import load$/;"	i
+StandardScaler	project/ml_practice/svr2.py	/^from sklearn.preprocessing import StandardScaler$/;"	i
+SVR	project/ml_practice/svr2.py	/^from sklearn.svm import SVR$/;"	i
+np	project/ml_practice/svr2.py	/^import numpy as np$/;"	i
+sc_X	project/ml_practice/svr2.py	/^sc_X = load('std_scaler_x.bin')$/;"	v
+sc_y	project/ml_practice/svr2.py	/^sc_y = load('std_scaler_y.bin')$/;"	v
+regressor	project/ml_practice/svr2.py	/^regressor = load('regressor.joblib')$/;"	v
+in_trans	project/ml_practice/svr2.py	/^in_trans = sc_X.transform(np.array([[6.5, 6.5], [3.5, 3.5]]))$/;"	v
+y_pred	project/ml_practice/svr2.py	/^y_pred = regressor.predict(in_trans);$/;"	v
+out_pred	project/ml_practice/svr2.py	/^out_pred = []$/;"	v
+y_pred	project/ml_practice/svr2.py	/^y_pred = out_pred$/;"	v
+y_pred	project/ml_practice/svr2.py	/^y_pred = sc_y.inverse_transform(y_pred)$/;"	v
+np	project/ml_practice/svr.py	/^import numpy as np$/;"	i
+matplotlib	project/ml_practice/svr.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	project/ml_practice/svr.py	/^import matplotlib.pyplot as plt$/;"	i
+pd	project/ml_practice/svr.py	/^import pandas as pd$/;"	i
+dataset	project/ml_practice/svr.py	/^dataset = pd.read_csv('Position_Salaries.csv')$/;"	v
+X	project/ml_practice/svr.py	/^X = dataset.iloc[:,1:2].values.astype(float)$/;"	v
+y	project/ml_practice/svr.py	/^y = dataset.iloc[:,2:3].values.astype(float)$/;"	v
+new_x	project/ml_practice/svr.py	/^new_x = []$/;"	v
+X	project/ml_practice/svr.py	/^X = new_x$/;"	v
+StandardScaler	project/ml_practice/svr.py	/^from sklearn.preprocessing import StandardScaler$/;"	i
+sc_X	project/ml_practice/svr.py	/^sc_X = StandardScaler()$/;"	v
+sc_y	project/ml_practice/svr.py	/^sc_y = StandardScaler()$/;"	v
+X	project/ml_practice/svr.py	/^X = sc_X.fit_transform(X)$/;"	v
+y	project/ml_practice/svr.py	/^y = sc_y.fit_transform(y)$/;"	v
+SVR	project/ml_practice/svr.py	/^from sklearn.svm import SVR$/;"	i
+regressor	project/ml_practice/svr.py	/^regressor = SVR(kernel='rbf')$/;"	v
+dump	project/ml_practice/svr.py	/^from joblib import dump$/;"	i
