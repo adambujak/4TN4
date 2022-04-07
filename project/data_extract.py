@@ -67,8 +67,8 @@ def extract_training_data(noisy_image, gt_image, edge_image):
         writer = csv.writer(f)
 
         # write the training data for every 1000th pixel
-        for j in range(1, len(noisy_image)-1, 1000):
-            for i in range(1, len(noisy_image[j])-1, 1000):
+        for j in range(1, len(noisy_image)-1, 10):
+            for i in range(1, len(noisy_image[j])-1, 10):
                 tX, ty = extract_training_point(noisy_image, gt_image, edge_image, i, j)
                 row = np.append(tX, ty)
                 writer.writerow(row)
@@ -91,7 +91,6 @@ def get_training_data():
 
     for path in training_directories:
         get_image_data(path)
-        break
 
 def init_dataset():
     with open('data.csv', 'w', encoding='UTF8', newline='') as f:
