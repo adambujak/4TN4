@@ -93,4 +93,12 @@ def get_training_data():
         get_image_data(path)
         break
 
+def init_dataset():
+    with open('data.csv', 'w', encoding='UTF8', newline='') as f:
+            writer = csv.writer(f)
+            # nip -> noisy image pixel | cep -> canny edge pixel | gtp -> ground truth pixel
+            header = ['nip']*9 + ['cep']*9 + ['gtp']
+            writer.writerow(header)
+
+init_dataset()
 get_training_data()
