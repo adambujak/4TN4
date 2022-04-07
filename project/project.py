@@ -48,10 +48,6 @@ def get_image_edges(image):
     # perform canny edge detection
     edges = auto_canny(blur)
 
-    cv.imshow("img", image)
-    cv.imshow("edges", edges)
-    cv.waitKey(0)
-
     return edges
 
 def extract_training_point(noisy_image, gt_image, edge_image, x, y):
