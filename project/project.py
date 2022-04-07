@@ -28,17 +28,29 @@ def get_images(directory):
         raise ValueError('images not found')
 
     noisy_image = cv.imread(noisy_image_name, 0)
-    gt_image = cv.imread(noisy_image_name, 0)
+    gt_image = cv.imread(gt_image_name, 0)
 
     return noisy_image, gt_image
 
+def auto_canny(image, sigma=0.33):
+	# compute the median of the single channel pixel intensities
+	v = np.median(image)
+	# apply automatic Canny edge detection using the computed median
+	lower = int(max(0, (1.0 - sigma) * v))
+	upper = int(min(255, (1.0 + sigma) * v))
+	edged = cv.Canny(image, lower, upper)
+	# return the edged image
+	return edged
+
 def get_image_edges(image):
-    # perform histogram equalization to improve results with low contrast images
-    equalized_image = cv.equalizeHist(image)
     # blur image to reduce noise
-    blur = cv.GaussianBlur(equalized_image, (9,9), 0)
+    blur = cv.GaussianBlur(image, (9,9), 0)
     # perform canny edge detection
-    edges = cv.Canny(image=blur, threshold1=100, threshold2=200)
+    edges = auto_canny(blur)
+
+    cv.imshow("img", image)
+    cv.imshow("edges", edges)
+    cv.waitKey(0)
 
     return edges
 
@@ -59,8 +71,8 @@ def extract_training_data(noisy_image, gt_image, edge_image):
         writer = csv.writer(f)
 
         # write the training data for every 1000th pixel
-        for j in range(1, len(noisy_image)-1, 1000):
-            for i in range(1, len(noisy_image[j])-1, 1000):
+        for j in range(1, len(noisy_image)-1, 10):
+            for i in range(1, len(noisy_image[j])-1, 10):
                 tX, ty = extract_training_point(noisy_image, gt_image, edge_image, i, j)
                 row = np.append(tX, ty)
                 writer.writerow(row)
@@ -83,10 +95,5 @@ def get_training_data():
 
     for path in training_directories:
         get_image_data(path)
-        # remove
-        break
-
-myarray = np.array([[1,3,4], [1,5,6], [9,8,7]])
-
 
 get_training_data()
