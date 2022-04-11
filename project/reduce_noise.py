@@ -5,6 +5,7 @@ import numpy as np
 from os import listdir
 from os.path import isfile, join
 
+# load computed model
 regressor = load('regressor.joblib')
 
 def estimate_pixel(X):
