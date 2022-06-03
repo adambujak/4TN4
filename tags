@@ -543,3 +543,33 @@ y	project/ml_practice/svr.py	/^y = sc_y.fit_transform(y)$/;"	v
 SVR	project/ml_practice/svr.py	/^from sklearn.svm import SVR$/;"	i
 regressor	project/ml_practice/svr.py	/^regressor = SVR(kernel='rbf')$/;"	v
 dump	project/ml_practice/svr.py	/^from joblib import dump$/;"	i
+np	project/train.py	/^import numpy as np$/;"	i
+pd	project/train.py	/^import pandas as pd$/;"	i
+shuffle	project/train.py	/^from sklearn.utils import shuffle$/;"	i
+shuffle_data	project/train.py	/^def shuffle_data(X, y):$/;"	f
+dataset	project/train.py	/^dataset = pd.read_csv('data.csv')$/;"	v
+X	project/train.py	/^X = dataset.iloc[:,0:18].values.astype(float)$/;"	v
+y	project/train.py	/^y = dataset.iloc[:,18].values.astype(float)$/;"	v
+X	project/train.py	/^X = X[0:10000]$/;"	v
+y	project/train.py	/^y = y[0:10000]$/;"	v
+SVR	project/train.py	/^from sklearn.svm import SVR$/;"	i
+train_test_split	project/train.py	/^from sklearn.model_selection import train_test_split$/;"	i
+regressor	project/train.py	/^regressor = SVR(kernel='rbf')$/;"	v
+dump	project/train.py	/^from joblib import dump$/;"	i
+load	project/reduce_noise.py	/^from joblib import load$/;"	i
+SVR	project/reduce_noise.py	/^from sklearn.svm import SVR$/;"	i
+cv	project/reduce_noise.py	/^import cv2 as cv$/;"	i
+np	project/reduce_noise.py	/^import numpy as np$/;"	i
+listdir	project/reduce_noise.py	/^from os import listdir$/;"	i
+isfile	project/reduce_noise.py	/^from os.path import isfile, join$/;"	i
+join	project/reduce_noise.py	/^from os.path import isfile, join$/;"	i
+regressor	project/reduce_noise.py	/^regressor = load('regressor.joblib')$/;"	v
+estimate_pixel	project/reduce_noise.py	/^def estimate_pixel(X):$/;"	f
+get_images	project/reduce_noise.py	/^def get_images(directory):$/;"	f
+auto_canny	project/reduce_noise.py	/^def auto_canny(image, sigma=0.33):$/;"	f
+get_image_edges	project/reduce_noise.py	/^def get_image_edges(image):$/;"	f
+extract_training_point	project/reduce_noise.py	/^def extract_training_point(noisy_image, gt_image, edge_image, x, y):$/;"	f
+generate_reduced_noise_image	project/reduce_noise.py	/^def generate_reduced_noise_image(noisy_image, gt_image, edge_image):$/;"	f
+reduce_noise	project/reduce_noise.py	/^def reduce_noise(directory):$/;"	f
+get_image_directory_list	project/reduce_noise.py	/^def get_image_directory_list():$/;"	f
+run	project/reduce_noise.py	/^def run():$/;"	f
